@@ -33,5 +33,14 @@ namespace PasswordGenerator
         {
             passwordTextBox.Text = Generator.GetPassword(m_settings);
         }
+
+        private void Settings_Validated(object sender, EventArgs e)
+        {
+            m_settings.PasswordLength = int.Parse(lengthTextBox.Text);
+            m_settings.Numbers = numbersCheckBox.Checked;
+            m_settings.SpecSymbols = specSymbCheckBox.Checked;
+            m_settings.SmallLetters = smallLettersCheckBox.Checked;
+            m_settings.BigLetters = bigLettersCheckBox.Checked;
+        }
     }
 }

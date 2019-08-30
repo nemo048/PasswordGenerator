@@ -69,6 +69,7 @@
             this.lengthTextBox.Size = new System.Drawing.Size(79, 20);
             this.lengthTextBox.TabIndex = 2;
             this.lengthTextBox.Text = "16";
+            this.lengthTextBox.Validated += new System.EventHandler(this.Settings_Validated);
             // 
             // passwordTextBox
             // 
@@ -94,6 +95,7 @@
             this.numbersCheckBox.TabIndex = 4;
             this.numbersCheckBox.Text = "numbers";
             this.numbersCheckBox.UseVisualStyleBackColor = true;
+            this.numbersCheckBox.Validated += new System.EventHandler(this.Settings_Validated);
             // 
             // specSymbCheckBox
             // 
@@ -105,6 +107,7 @@
             this.specSymbCheckBox.TabIndex = 5;
             this.specSymbCheckBox.Text = "special symbols";
             this.specSymbCheckBox.UseVisualStyleBackColor = true;
+            this.specSymbCheckBox.Validated += new System.EventHandler(this.Settings_Validated);
             // 
             // smallLettersCheckBox
             // 
@@ -118,6 +121,7 @@
             this.smallLettersCheckBox.TabIndex = 6;
             this.smallLettersCheckBox.Text = "small letters";
             this.smallLettersCheckBox.UseVisualStyleBackColor = true;
+            this.smallLettersCheckBox.Validated += new System.EventHandler(this.Settings_Validated);
             // 
             // bigLettersCheckBox
             // 
@@ -131,6 +135,7 @@
             this.bigLettersCheckBox.TabIndex = 7;
             this.bigLettersCheckBox.Text = "BIG LETTERS";
             this.bigLettersCheckBox.UseVisualStyleBackColor = true;
+            this.bigLettersCheckBox.Validated += new System.EventHandler(this.Settings_Validated);
             // 
             // MainForm
             // 
