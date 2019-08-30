@@ -150,7 +150,7 @@
             this.Controls.Add(this.lengthTextBox);
             this.Controls.Add(this.passLengthLabel);
             this.Controls.Add(this.generate);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon)Properties.Resources.icon);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PassGen";
