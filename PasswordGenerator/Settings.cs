@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace PasswordGenerator
 {
-	class Settings
+	public sealed class Settings
 	{
-		public bool Numbers { get; private set; }
-		public bool SpecSymbols { get; private set; }
-		public bool SmallLetters { get; private set; }
-		public bool BigLetters { get; private set; }
+		public bool Numbers { get; }
+		public bool SpecSymbols { get; }
+		public bool SmallLetters { get; }
+		public bool BigLetters { get; }
+        public int PasswordLength { get; set; }
 
-		public Settings(bool numbers, bool specSymbols, bool smallLetters, bool bigLetters)
+		public Settings(bool numbers, bool specSymbols, bool smallLetters, bool bigLetters, int passwordLength)
 		{
 			Numbers = numbers;
 			SpecSymbols = specSymbols;
 			SmallLetters = smallLetters;
 			BigLetters = bigLetters;
-		}
+            PasswordLength = passwordLength;
+        }
 	}
 }

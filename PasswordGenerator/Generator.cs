@@ -10,7 +10,7 @@ namespace PasswordGenerator
 		private static Array SymbolToGenStates = Enum.GetValues(typeof(SymbolToGen));
 		private static Array LetterToGenStates = Enum.GetValues(typeof(LetterToGen));
 
-		public static string GetPassword(Settings settings, int passwordLength = 8, char startAlphabet = 'a', char endAlphabet = 'z', string specialSymbols = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`~")
+		public static string GetPassword(Settings settings, char startAlphabet = 'a', char endAlphabet = 'z', string specialSymbols = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`~")
 		{
 			if(IsAllSettingsNull(settings))
 			{
@@ -20,7 +20,7 @@ namespace PasswordGenerator
 
 			StringBuilder password = new StringBuilder();
 
-			while(password.Length < passwordLength)
+			while(password.Length < settings.PasswordLength)
 			{
 				SymbolToGen symbolToGen = (SymbolToGen)SymbolToGenStates.GetValue(Random.Next(SymbolToGenStates.Length));
 				if (symbolToGen == SymbolToGen.LETTER && (settings.BigLetters || settings.SmallLetters))
