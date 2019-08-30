@@ -3,11 +3,11 @@ using System.Windows.Forms;
 
 namespace PasswordGenerator
 {
-	public partial class Form1 : Form
+	public partial class MainForm : Form
 	{
 		private Settings settings;
 
-		public Form1()
+		public MainForm()
 		{
 			InitializeComponent();
 		}
