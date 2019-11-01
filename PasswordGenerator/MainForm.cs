@@ -32,6 +32,7 @@ namespace PasswordGenerator
         private void GeneratePassword()
         {
             passwordTextBox.Text = Generator.GetPassword(m_settings);
+            Clipboard.SetText(passwordTextBox.Text);
         }
 
         private void Settings_Validated(object sender, EventArgs e)
