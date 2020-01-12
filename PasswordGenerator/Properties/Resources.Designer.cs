@@ -63,9 +63,9 @@ namespace PasswordGenerator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon icon {
+        internal static System.Drawing.Icon hacking {
             get {
-                object obj = ResourceManager.GetObject("icon", resourceCulture);
+                object obj = ResourceManager.GetObject("hacking", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
